@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --btn-bg: linear-gradient(96.64deg, #7f00e0 -13.03%, #33ff47 110.04%);
+  --light-grey: rgba(44, 44, 44, 1);
+}
+body {
+  overflow: hidden;
+  background-image: url(img/backgorund_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  z-index: 10;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.container_1 {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.logo {
+  width: 15%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.container_2 ul {
+  font-size: 1.3rem;
+  display: flex;
+}
+.container_2 li {
+  list-style-type: none;
+}
+.container_2 li a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.container_2 button {
+  font-weight: 500;
+  margin-right: 2rem;
+  background-color: var(--light-grey);
+  border: 1px white solid;
+  border-radius: 7px;
+}
+.container_1,
+.container_2 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+main {
+  z-index: 5;
+  height: 100vh;
+  width: 100vh;
+  position: relative;
+}
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  padding-top: 9rem;
+  margin-left: 5.5rem;
+  padding-left: 1rem;
+  color: white;
+  position: relative;
+}
+.heading {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+
+.info {
+  position: relative;
+  overflow-x: auto;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 200%;
+  width: 200%;
+  border-radius: 50rem;
+  z-index: -1;
+  top: -10rem;
+  right: -1rem;
+}
+.cover_1 {
+  /* position: fixed;
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 100%;
+  width: 50%;
+  border-radius: 100%;
+  z-index: -1;
+  left: 60rem;
+  top: -30rem; */
+
+  /* or position : absolute */
+  background-color: rgba(0, 0, 0, 0.47);
+height: 1399%;
+width: 50%;
+border-radius: 100%;
+z-index: -1;
+left: 60rem;
+top: -22rem;
+position: absolute;
+}
+.btn {
+  background: rgb(127, 0, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(127, 0, 224, 1) 17%,
+    rgba(51, 255, 71, 1) 100%
+  );
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
