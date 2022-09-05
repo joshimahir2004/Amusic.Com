@@ -2,16 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
-  --btn-bg: linear-gradient(96.64deg, #7f00e0 -13.03%, #33ff47 110.04%);
+  --cover: rgba(0, 0, 0, 0.47);
   --light-grey: rgba(44, 44, 44, 1);
 }
+
+.container_2 span {
+  color: wheat;
+  display: none;
+}
+
 body {
   overflow: hidden;
   background-image: url(img/backgorund_img.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 nav {
   z-index: 10;
   margin-top: 2rem;
@@ -19,23 +27,28 @@ nav {
   justify-content: space-between;
   position: relative;
 }
+
 .container_1 {
   display: flex;
   align-items: center;
   color: white;
 }
+
 .logo {
   width: 15%;
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .container_2 ul {
   font-size: 1.3rem;
   display: flex;
 }
+
 .container_2 li {
   list-style-type: none;
 }
+
 .container_2 li a {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -43,6 +56,7 @@ nav {
   text-decoration: none;
   font-weight: bolder;
 }
+
 .container_2 button {
   font-weight: 500;
   margin-right: 2rem;
@@ -50,17 +64,24 @@ nav {
   border: 1px white solid;
   border-radius: 7px;
 }
+
 .container_1,
 .container_2 {
   font-size: 1rem;
   font-weight: bolder;
 }
+
 main {
   z-index: 5;
   height: 100vh;
   width: 100vh;
   position: relative;
 }
+
+.in_phone {
+  display: none;
+}
+
 .container {
   font-family: Arial, Helvetica, sans-serif;
   width: 70%;
@@ -70,6 +91,7 @@ main {
   color: white;
   position: relative;
 }
+
 .heading {
   margin-bottom: 2rem;
   font-size: 2.4rem;
@@ -82,6 +104,10 @@ main {
   margin-bottom: 2rem;
 }
 
+.close_icon {
+  display: none;
+}
+
 .cover {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.47);
@@ -92,26 +118,29 @@ main {
   top: -10rem;
   right: -1rem;
 }
-.cover_1 {
-  /* position: fixed;
+
+.cover {
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.47);
-  height: 100%;
+  height: 200%;
+  width: 200%;
+  border-radius: 50rem;
+  z-index: -1;
+  top: -10rem;
+  right: -1rem;
+}
+
+.cover_1 {
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 1399%;
   width: 50%;
   border-radius: 100%;
   z-index: -1;
-  left: 60rem;
-  top: -30rem; */
-
-  /* or position : absolute */
-  background-color: rgba(0, 0, 0, 0.47);
-height: 1399%;
-width: 50%;
-border-radius: 100%;
-z-index: -1;
-left: 60rem;
-top: -22rem;
-position: absolute;
+  left: 66rem;
+  top: -25rem;
+  position: absolute;
 }
+
 .btn {
   background: rgb(127, 0, 224);
   background: linear-gradient(
@@ -126,4 +155,127 @@ position: absolute;
   color: white;
   border-radius: 0.5rem;
   text-align: center;
+}
+
+@media all and (max-width: 450px) {
+  .cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.47);
+    height: 100%;
+    width: 100%;
+    border-radius: 50rem;
+    z-index: -1;
+    top: -22rem;
+    right: 15rem;
+  }
+
+  .container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding-top: 9rem;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    color: white;
+    position: relative;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .info {
+    position: relative;
+    overflow-x: auto;
+    font-size: 0.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background: rgb(127, 0, 224);
+    background: linear-gradient(
+      90deg,
+      rgba(127, 0, 224, 1) 17%,
+      rgba(51, 255, 71, 1) 100%
+    );
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .container_2 ul {
+    position: absolute;
+    background: rgb(175,0,255);
+background: linear-gradient(90deg, rgba(175,0,255,1) 0%, rgba(123,0,255,1) 100%);;
+padding-bottom: 2rem;
+    height: 100vh;
+    transition: 0.5s all ease;
+    top: 0;
+    margin-left: 500px;
+    left: -5rem;
+    display: block;
+    font-size: 1.3rem;
+  }
+  
+  .container_2 li {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+
+  .container_2 li a {
+    /* margin-top: 1rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+#close_icon{
+  box-shadow: 2px 2px 5px 0px black;
+  
+  width: 1.5rem;
+}
+  .btn_w {
+    display: none;
+  }
+
+  .container_2 .in_phone {
+    display: block;
+    font-weight: 400;
+    background-color: var(--light-grey);
+    color: white;
+    border-radius: 7px;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    
+    background: linear-gradient(
+      90deg,
+      rgba(127, 0, 224, 1) 17%,
+      rgba(51, 255, 71, 1) 100%
+    );
+    
+  }
+
+  .container_2 span {
+    color: white;
+    margin-right: 1rem;
+    display: block;
+  }
+  .container_2 {
+    position: relative;
+  }
 }

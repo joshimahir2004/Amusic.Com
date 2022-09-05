@@ -2,39 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amusic.Com</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amusic.Com</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
-    <nav>
-        <div class="container_1">
-            <img src="img/logo.png" alt="" class="logo">
-            <h1>Amusic.Com</h1>
-        </div>
-        <div class="cover_1"></div>
-        <div class="container_2">
-            <ul>
-                <li><a href="">support</a></li>
-                <li><a href="">About</a></li>
-                <button>
-                    <li><a href="">Join</a></li>
-                </button>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <div class="cover"></div>
-        <div class="container">
-            <h1 class="heading">Create the music you always dreamed<br>about</h1>
-            <h3 class="info">Join us for just 10$/month and create the that came from your heart and share it with
-                people all over the world</h3>
-            <button class="btn">Join us for free</button>
-        </div>
-    </main>
+  <nav>
+    <div class="container_1">
+      <img src="img/logo.png" alt="" class="logo" />
+      <h1>Amusic.Com</h1>
+    </div>
+    <div class="cover_1"></div>
+    <div class="container_2">
+      <span onclick="myfunction()" class="material-symbols-outlined icon" id="menu_icon">
+        menu
+      </span>
+      <ul id="side_bar">
+        <span onclick="closefunction()" class="material-symbols-outlined icon" id="close_icon"> close </span>
+
+        <li><a href="">support</a></li>
+        <li><a href="">About</a></li>
+        <button class="btn_w">
+          <li><a href="">Join</a></li>
+        </button>
+        <button class="in_phone">Join</button>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="cover"></div>
+    <div class="container">
+      <h1 class="heading">Create the music you always dreamed<br />about</h1>
+      <h3 class="info">
+        Join us for just 10$/month and create the that came from your heart
+        and share it with people all over the world
+      </h3>
+      <button class="btn">Join us for free</button>
+    </div>
+  </main>
+  <script>
+    // function myfunction(){
+    //     var x = document.getElementById("side_bar");
+    //     var x = document.getElementById("side_bar");
+    //     x.style.transition = "1s";
+    //     if (x.style.display ===" block ") {
+    //         x.style.display = "none";
+    //     }
+    //     else{
+    //         x.style.display = "block";
+    //     }
+    // }
+    // function closefunction(){
+    //    document.getElementById("side_bar").style.display ="none";
+    // }
+    function myfunction() {
+      document.getElementById("side_bar").style.marginLeft = "0px";
+    }
+    function closefunction() {
+      document.getElementById("side_bar").style.marginLeft = "500px";
+    }
+  </script>
 </body>
 
 </html>
